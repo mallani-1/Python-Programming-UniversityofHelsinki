@@ -1,0 +1,28 @@
+This directory contains my solution for Exercise 2 of the exam, implemented in Python to identify the positions of a specified gene sequence within a genome string.
+
+## 🔍 Task Overview
+
+The task was to develop a program to achieve the following:
+
+1. **Functionality**:
+   - Implement a function `find_gene_positions(gene, genome)` to search for all occurrences of a given gene sequence in a larger genome string.
+
+2. **Return Values**:
+   - The function should return a list of starting positions where the gene sequence appears in the genome.
+   - If the gene sequence is not found, return `None`.
+
+3. **Testing**:
+   - Test the function with different gene sequences to ensure it handles multiple occurrences and non-existent sequences correctly.
+
+## 📄 Example Interaction:
+
+```plaintext
+genome = "ATCGAGATCGACGATCGTAGCTAGCTAGCTAGCGATCGA"
+
+gene1 = "TAGCTA"
+gene2 = "ATCGA"
+gene3 = "X"
+
+print(find_gene_positions(gene1, genome))  # Outputs: [16, 22]
+print(find_gene_positions(gene2, genome))  # Outputs: [0, 7, 31]
+print(find_gene_positions(gene3, genome))  # Outputs: None
